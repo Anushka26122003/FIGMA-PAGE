@@ -2,13 +2,21 @@ import React, { useEffect, useRef, useState } from "react";
 
 const ResponsiveScale = ({ children }) => {
   const [scale, setScale] = useState(1);
-  const designWidth = 1600; // your original design width
+  const [scaledHeight, setScaledHeight] = useState("auto");
+  const contentRef = useRef(null);
+  const designWidth = 1600;
 
   useEffect(() => {
     const updateScale = () => {
       const screenWidth = window.innerWidth;
       const newScale = screenWidth / designWidth;
       setScale(newScale);
+
+      // Fix extra bottom space
+      if (contentRef.current) {
+        const originalHeight = contentRef.current.scrollHeight;
+        setScaledHeight(originalHeight * newScale);
+      }
     };
 
     updateScale();
@@ -20,14 +28,19 @@ const ResponsiveScale = ({ children }) => {
     <div
       style={{
         width: "100vw",
+        height: scaledHeight,
         overflowX: "hidden",
+        scrollbarWidth: "none",
+        msOverflowStyle: "none",
       }}
     >
       <div
+        ref={contentRef}
         style={{
           transform: `scale(${scale})`,
           transformOrigin: "top left",
-          width: `${1600}px`,
+          width: "1600px",
+          scrollbarWidth: "none",
         }}
       >
         {children}
