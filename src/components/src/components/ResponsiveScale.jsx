@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 const ResponsiveScale = ({ children }) => {
   const [scale, setScale] = useState(1);
-  const [scaledHeight, setScaledHeight] = useState("auto");
+  const [scaledHeight, setScaledHeight] = useState(0);
   const contentRef = useRef(null);
   const designWidth = 1600;
 
@@ -11,15 +11,14 @@ const ResponsiveScale = ({ children }) => {
       const screenWidth = window.innerWidth;
       const newScale = screenWidth / designWidth;
       setScale(newScale);
-
-      // Fix extra bottom space
       if (contentRef.current) {
-        const originalHeight = contentRef.current.scrollHeight;
+        const originalHeight = contentRef.current.offsetHeight;
         setScaledHeight(originalHeight * newScale);
       }
     };
 
-    updateScale();
+    // Small delay to let content render first
+    setTimeout(updateScale, 100);
     window.addEventListener("resize", updateScale);
     return () => window.removeEventListener("resize", updateScale);
   }, []);
@@ -28,8 +27,8 @@ const ResponsiveScale = ({ children }) => {
     <div
       style={{
         width: "100vw",
-        height: scaledHeight,
-        overflowX: "hidden",
+        height: scaledHeight || "auto",
+        overflow: "hidden",
         scrollbarWidth: "none",
         msOverflowStyle: "none",
       }}
