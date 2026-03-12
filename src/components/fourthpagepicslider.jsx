@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
 const slidePics = [
-  { src: "public/Rectangle 2.png", alt: "pic1" },
-  { src: "public/Rectangle 20.png", alt: "pic2" },
-  { src: "public/Rectangle 16.png", alt: "pic3" },
-  { src: "public/Rectangle 17.png", alt: "pic4" },
-  { src: "public/Rectangle 23.png", alt: "pic5" },
-  { src: "public/Rectangle 7.png", alt: "pic6" },
-  { src: "public/Rectangle 10.png", alt: "pic7" },
-  { src: "public/Rectangle 9.png", alt: "pic8" },
+  { src: "/Rectangle 2.png", alt: "pic1" },
+  { src: "/Rectangle 20.png", alt: "pic2" },
+  { src: "/Rectangle 16.png", alt: "pic3" },
+  { src: "/Rectangle 17.png", alt: "pic4" },
+  { src: "/Rectangle 23.png", alt: "pic5" },
+  { src: "/Rectangle 7.png", alt: "pic6" },
+  { src: "/Rectangle 10.png", alt: "pic7" },
+  { src: "/Rectangle 9.png", alt: "pic8" },
 ];
 
 const leftPositions = ["31px", "378px", "725px", "1072px"];

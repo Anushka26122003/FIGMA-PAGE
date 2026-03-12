@@ -36,7 +36,7 @@ function Pageone() {
             />
 
             <img
-              src="public/favicon.png"
+              src="/favicon.png"
               alt="logo-right"
               className="w-[35.25px] h-[17px] top-[8.5px] left-[5.88px]"
             />
@@ -59,7 +59,7 @@ function Pageone() {
       </div>
       <div className="relative">
         <img
-          src="public/Group 26.png"
+          src="/Group 26.png"
           alt="artboard"
           className="absolute w-[1055px] h-[185px] rotate-0 opacity-100 top-[408px] left-[192px]"
         />
@@ -82,14 +82,14 @@ function Pageone() {
       <div>
         <div>
           <img
-            src="public/secondpagelogo.png"
+            src="/secondpagelogo.png"
             alt="bornlogo"
             className="absolute w-[904px] h-[183px] rotate-0 opacity-100 top-[943px] left-[463px]"
           />
         </div>
         <div>
           <img
-            src="public/Rectangle 12.png"
+            src="/Rectangle 12.png"
             alt="2ndpageimage"
             className="absolute w-[393px] h-[390px] rotate-0 opacity-100 top-[1207px] left-[974px] rounded-[9px]"
           />
@@ -129,7 +129,7 @@ function Pageone() {
 
       <div>
         <img
-          src="public/ART.png"
+          src="/ART.png"
           alt="art"
           className="absolute w-[80px] h-[133px] rotate-0 opacity-100 top-[2927.5px] left-[505px]"
         />
@@ -257,23 +257,23 @@ function Pageone() {
       {/*5 page */}
       <div>
         <img
-          src="public/forbes-magazine-logo.png"
+          src="/forbes-magazine-logo.png"
           alt="forbes"
           className="absolute w-[198.20px] h-[50px] rotate-0 opacity-100 top-[4710px] left-[49px]"
         />
         <img
-          src="public/Mens-Health-Logo-500x281.png"
+          src="/Mens-Health-Logo-500x281.png"
           alt="mens-health"
           className="absolute w-[243.14px] h-[74px] rotate-0 opacity-100 top-[4698px] left-[398px]"
         />
         <img
-          src="public/Maxim-logo-1536x864.png"
+          src="/Maxim-logo-1536x864.png"
           alt="Maxim-logo"
           className="absolute w-[238.11px] h-[71px] rotate-0 opacity-100 top-[4700px] left-[791px]"
         />
 
         <img
-          src="public/1.png"
+          src=" /1.png"
           alt="public/1"
           className="absolute w-[199.66px] h-[53px] rotate-0 opacity-100 top-[4709px] left-[1181px]"
         />
@@ -306,7 +306,7 @@ function Pageone() {
         join the newsletter
       </p>
       <img
-        src="public/Layer_1.png"
+        src="/Layer_1.png"
         alt="layer"
         style={{
           width: "17.35px",
@@ -322,7 +322,7 @@ function Pageone() {
         GET 10% OFF YOUR FIRST ORDER
       </p>
       <img
-        src="public/Artboard 3_1 1.png"
+        src="/Artboard 3_1 1.png"
         alt="image "
         className="absolute w-[1445.65px] h-[120px] rotate-0 opacity-100 top-[5499px] left-[6px]"
       />
