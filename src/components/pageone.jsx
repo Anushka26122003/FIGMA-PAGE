@@ -3,21 +3,7 @@ import CarouselDarkVariantExample from "./3rdpagecorosole";
 import PictureSlider from "./fourthpagepicslider";
 function Pageone() {
   return (
-    <div 
-  className="relative mx-auto" 
-  style={{ 
-    maxWidth: "1600px", 
-    height: "5370px",
-    overflow: "hidden",
-    overflowY: "scroll",
-    scrollbarWidth: "none",
-    msOverflowStyle: "none"
-  }}
->  
-  {/* all your content */}
-
-  {/* all your content here */}
-
+    <div>
       <img
         src="/Group 26.png"
         alt="artboard"

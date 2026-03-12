@@ -3,15 +3,15 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Pageone from "./components/pageone";
+import ResponsiveScale from "./components/src/components/ResponsiveScale";
 
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <Pageone />
-     
+      <ResponsiveScale>
+        <Pageone />
+      </ResponsiveScale>
     </>
   );
 }
